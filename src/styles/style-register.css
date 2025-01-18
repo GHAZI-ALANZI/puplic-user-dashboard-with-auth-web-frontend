@@ -1,0 +1,14 @@
+/* Unique animated background */
+.maindiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(120deg, #2200339e, #330066, #000033);
+    overflow: hidden;
+    
+  }
+  .card{
+    opacity: 0.90;
+    background-image: linear-gradient(90deg, rgb(193, 193, 193),rgb(107, 107, 107)),linear-gradient(157.5deg, rgb(0, 165, 230) 0%, rgb(0, 165, 230) 39%,rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%,rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%,rgb(52, 116, 195) 60%, rgb(52, 116, 195) 68%,rgb(70, 99, 183) 68%, rgb(70, 99, 183) 86%,rgb(87, 83, 171) 86%, rgb(87, 83, 171) 100%),linear-gradient(135deg, rgb(0, 165, 230) 0%, rgb(0, 165, 230) 39%,rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%,rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%,rgb(52, 116, 195) 60%, rgb(52, 116, 195) 68%,rgb(70, 99, 183) 68%, rgb(70, 99, 183) 86%,rgb(87, 83, 171) 86%, rgb(87, 83, 171) 100%); background-blend-mode:overlay,overlay,normal;  }
