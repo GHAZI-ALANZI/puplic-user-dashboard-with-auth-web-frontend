@@ -19,7 +19,7 @@ Docker Compose
 
 🔹 Clone the Repository
 
-git clone https://github.com/your-username/react-auth-docker.git
+git clone https://github.com/GHAZI-ALANZI/puplic-user-dashboard-with-auth-web-frontend.git
 cd react-auth-docker
 
 ## 🔹 Install Dependencies
