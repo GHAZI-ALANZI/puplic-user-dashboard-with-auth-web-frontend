@@ -1,0 +1,110 @@
+/* Sidebar Container */
+.sidebar {
+    width: 17vw;
+    background-image: linear-gradient(90deg, rgba(168, 86, 201, 0.192) 0%, rgb(168, 86, 201) 3%,rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%,rgb(112, 61, 145) 11%, rgb(112, 61, 145) 20%,rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%,rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%,rgb(29, 24, 62) 71%, rgb(29, 24, 62) 72%,rgba(1, 12, 34, 0.479) 72%, rgb(1, 12, 34) 100%),linear-gradient(67.5deg, rgb(168, 86, 201) 0%, rgb(168, 86, 201) 3%,rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%,rgb(112, 61, 145) 11%, rgb(112, 61, 145) 20%,rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%,rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%,rgb(29, 24, 62) 71%, rgb(29, 24, 62) 72%,rgb(1, 12, 34) 72%, rgb(1, 12, 34) 100%),linear-gradient(112.5deg, rgb(168, 86, 201) 0%, rgb(168, 86, 201) 3%,rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%,rgb(112, 61, 145) 11%, rgb(112, 61, 145) 20%,rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%,rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%,rgb(29, 24, 62) 71%, rgb(29, 24, 62) 72%,rgb(1, 12, 34) 72%, rgb(1, 12, 34) 100%),linear-gradient(45deg, rgb(168, 86, 201) 0%, rgb(168, 86, 201) 3%,rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%,rgb(112, 61, 145) 11%, rgb(112, 61, 145) 20%,rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%,rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%,rgb(29, 24, 62) 71%, rgb(29, 24, 62) 72%,rgb(1, 12, 34) 72%, rgb(1, 12, 34) 100%),linear-gradient(90deg, rgb(95, 3, 74),rgb(35, 65, 96)); background-blend-mode:overlay,overlay,overlay,overlay,normal;    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    transition: width 0.3s ease;
+    z-index: 1000;
+    border-radius: 0% 5% 5% 0%;
+    box-shadow: rgba(0, 0, 0, 0.637) 2.4px 2.4px 3.2px;  }
+  
+  .sidebar.collapsed {
+    width: 70px;
+  }
+  
+  /* Sidebar Toggle Button */
+  .toggle-btn {
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+  }
+  
+  .toggle-btn i {
+    font-size: 20px;
+  }
+  
+  /* Sidebar Menu */
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-menu li {
+    padding: 10px;
+  }
+  
+  .sidebar-menu li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .sidebar-menu li a:hover {
+    background-color: #ff5e00;
+  }
+  
+  /* Sidebar Icons */
+  .sidebar-menu i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  /* Hide text when collapsed */
+  .sidebar.collapsed .sidebar-menu span  {
+    display: none;
+  }
+  
+  /* Sidebar Header */
+  .sidebar-header {
+    font-size: 14px;
+    color: #bbbbbb;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0.8;
+  }
+
+
+
+  .sidebar-clock {
+    text-align: left;
+    color: white;
+    margin-bottom: 15px;
+    padding: 19px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .clock-time {
+    font-size: 2vw;
+    font-weight: bold;
+  }
+  
+  .clock-date {
+    font-size: 1.5vw;
+    opacity: 0.8;
+    font-weight: bold;
+
+  }
+  
+  
+  /* Responsive Sidebar */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 70px;
+    }
+  
+    .sidebar span {
+      display: none;
+    }
+  }
+  
