@@ -1,46 +1,75 @@
-# Getting Started with Create React App
+## 🚀 Puplic User Dashboard React 19 + TypeScript + Authentication (Register/Login) + Docker
+This project is a React 19 + TypeScript web application with JWT authentication (Register/Login) using an Auth folder for cleaner structure. The app is containerized using Docker and Nginx for efficient deployment.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Features
+✅ React 19 + TypeScript for a modern frontend
+✅ User Authentication (Register/Login/Logout) with JWT stored in localStorage
+✅ Protected Routes for Authenticated Users
+✅ Auth logic inside src/Auth/ folder for better structure
+✅ Dockerized for easy deployment
+✅ Uses Nginx for fast static file serving
+✅ Multi-stage build for a smaller Docker image size
 
-## Available Scripts
+## 📌 Getting Started
+🔹 Prerequisites
+Docker (Install from Docker)
+Docker Compose
 
-In the project directory, you can run:
+## 📌  Installation & Setup
 
-### `npm start`
+🔹 Clone the Repository
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+git clone https://github.com/your-username/react-auth-docker.git
+cd react-auth-docker
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🔹 Install Dependencies
+npm install
+              
+## 🔹 Start Development Server
+npm start
 
-### `npm test`
+## 📌 Authentication Setup
+This app includes:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+User Registration
+User Login
+JWT Token Storage
+Protected Routes
 
-### `npm run build`
+## Authentication logic inside src/Auth/ folder
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📍 Updated Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+puplic-user-dashboard-with-auth-web-frontend/
+│── src/                   
+│   │── Auth/             # Authentication logic
+│   │   │── auth.ts  # Handles API calls (Login/Register/Logout)
+│   │  
+│   │── components/        # Reusable UI components
+│   │── pages/             # Login/Register pages
+│   │── App.tsx            # Main app entry
+│── public/                # Static assets
+│── Dockerfile             # Docker setup for React
+│── docker-compose.yml     # Docker Compose config
+│── nginx.conf             # Nginx configuration
+│── package.json           # Project dependencies
+│── .dockerignore          # Files ignored in Docker build
+│── README.md              # Project documentation
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📌Running with Docker
+Start the Container
+docker-compose up --build -d
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Check Running Containers
+docker ps
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Stop the Container
 
-## Learn More
+docker-compose down
+            
+## Rebuild the Image
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+docker-compose up --build -d
