@@ -1,6 +1,21 @@
 ## 🚀 Puplic User Dashboard React 19 + TypeScript + Authentication (Register/Login) + Docker
 This project is a React 19 + TypeScript web application with JWT authentication (Register/Login) using an Auth folder for cleaner structure. The app is containerized using Docker and Nginx for efficient deployment.
 
+
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/4f46fbb2-e788-4fb0-8b09-1b14f6ae2b6c" />
+
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/600ddb4b-0a88-4e19-884a-757b65e0e5ba" />
+
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/6a2fe095-5b1a-408d-81db-568510a645ff" />
+
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/3a19d798-97d2-4399-a3fa-d774827acfe1" />
+
+
+
+
+
+
+
 ## 📌 Features
 ✅ React 19 + TypeScript for a modern frontend
 ✅ User Authentication (Register/Login/Logout) with JWT stored in localStorage
